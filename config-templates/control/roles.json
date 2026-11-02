@@ -1,0 +1,130 @@
+[
+  {
+    "name": "main-1",
+    "agentId": "main",
+    "purpose": "Coordinator: priorities, the shared registry, commitments and owner decisions",
+    "mode": "on_demand",
+    "required_sources": [
+      "registry"
+    ],
+    "interactive_model": "openai/gpt-6.1-sol",
+    "primary_processing": "Tools / Sol Medium; Luna Low for simple operation contracts",
+    "next_action": "Configure and verify local sources; this template grants no execution or outbound authority.",
+    "interactive_thinking": "medium"
+  },
+  {
+    "name": "mail-1",
+    "agentId": "mail-1",
+    "purpose": "Bounded mail review: classification, deadlines, commitments and reply drafts",
+    "mode": "on_demand",
+    "required_sources": [
+      "outlook_mail"
+    ],
+    "interactive_model": "openai/gpt-6-luna",
+    "primary_processing": "Tools / Luna Low preliminary; Sol Medium for complex tasks",
+    "next_action": "Configure and verify local sources; this template grants no execution or outbound authority.",
+    "interactive_thinking": "low"
+  },
+  {
+    "name": "backup-1",
+    "agentId": "backup-1",
+    "purpose": "Paused by the owner; folder selection and independent storage deferred",
+    "mode": "paused_by_owner",
+    "required_sources": [],
+    "interactive_model": "openai/gpt-6-luna",
+    "primary_processing": "Tools / Luna Low preliminary; Sol Medium for complex tasks",
+    "next_action": "Configure and verify local sources; this template grants no execution or outbound authority.",
+    "interactive_thinking": "low"
+  },
+  {
+    "name": "security-1",
+    "agentId": "security-1",
+    "purpose": "Ubuntu/OpenClaw: analyze fixed passive reports without commands or remediation",
+    "mode": "on_demand",
+    "required_sources": [
+      "ubuntu_reports"
+    ],
+    "interactive_model": "openai/gpt-6.1-sol",
+    "primary_processing": "Tools / Sol Medium; Luna Low for simple operation contracts",
+    "next_action": "Configure and verify local sources; this template grants no execution or outbound authority.",
+    "interactive_thinking": "medium"
+  },
+  {
+    "name": "headhunter-1",
+    "agentId": "headhunter-1",
+    "purpose": "Job research and application preparation from a confirmed candidate profile",
+    "mode": "on_demand",
+    "required_sources": [
+      "candidate_profile"
+    ],
+    "interactive_model": "openai/gpt-6-luna",
+    "primary_processing": "Tools / Luna Low preliminary; Sol Medium for complex tasks",
+    "next_action": "Configure and verify local sources; this template grants no execution or outbound authority.",
+    "interactive_thinking": "low"
+  },
+  {
+    "name": "webdev-1",
+    "agentId": "webdev-1",
+    "purpose": "Responsible developer for scoped web implementation and verification",
+    "mode": "on_demand",
+    "required_sources": [
+      "approved_project"
+    ],
+    "interactive_model": "openai/gpt-6.1-sol",
+    "primary_processing": "Tools / Sol Medium; Luna Low for simple operation contracts",
+    "next_action": "Configure and verify local sources; this template grants no execution or outbound authority.",
+    "interactive_thinking": "medium"
+  },
+  {
+    "name": "elder-1",
+    "agentId": "elder-1",
+    "purpose": "Improvement proposals and isolated checks; automatic application disabled",
+    "mode": "on_demand",
+    "required_sources": [
+      "new_results"
+    ],
+    "interactive_model": "openai/gpt-6.1-sol",
+    "primary_processing": "Tools / Sol Medium; Luna Low for simple operation contracts",
+    "next_action": "Configure and verify local sources; this template grants no execution or outbound authority.",
+    "interactive_thinking": "medium"
+  },
+  {
+    "name": "security-web-1",
+    "agentId": "security-web-1",
+    "purpose": "On-demand bounded review of local example.invalid sources and dependency locks",
+    "mode": "on_demand",
+    "required_sources": [
+      "approved_site_snapshot"
+    ],
+    "interactive_model": "openai/gpt-6.1-sol",
+    "primary_processing": "Tools / Sol Medium; Luna Low for simple operation contracts",
+    "next_action": "Configure and verify local sources; this template grants no execution or outbound authority.",
+    "interactive_thinking": "medium"
+  },
+  {
+    "name": "analytics-1",
+    "agentId": "analytics-1",
+    "purpose": "Measurement quality and analysis of approved site aggregates, on demand",
+    "mode": "on_demand",
+    "required_sources": [
+      "site_aggregates"
+    ],
+    "interactive_model": "openai/gpt-6-luna",
+    "primary_processing": "Tools / Luna Low preliminary; Sol Medium for complex tasks",
+    "next_action": "Configure and verify local sources; this template grants no execution or outbound authority.",
+    "interactive_thinking": "low"
+  },
+  {
+    "name": "clients-1",
+    "agentId": "clients-1",
+    "purpose": "Studio client research, materials, responses and next steps",
+    "mode": "on_demand",
+    "required_sources": [
+      "studio_profile"
+    ],
+    "interactive_model": "openai/gpt-6-luna",
+    "primary_processing": "Tools / Luna Low preliminary; Sol Medium for complex tasks",
+    "next_action": "Configure and verify local sources; this template grants no execution or outbound authority.",
+    "interactive_thinking": "low"
+  }
+]

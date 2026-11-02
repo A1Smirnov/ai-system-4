@@ -1,0 +1,1035 @@
+{
+  "edition": "distilled-source",
+  "prepared_at": "2026-11-02T10:18:55.697Z",
+  "original_commit_identifiers_included": false,
+  "working_tree_snapshot": true,
+  "history_included": false,
+  "personal_runtime_included": false,
+  "export_only_transformations": [
+    "config-templates/control/roles.json",
+    "extensions/personal-operations/status.cjs",
+    "package.json",
+    "personal-system/control/career-answers.cjs",
+    "personal-system/control/career-dashboard.cjs",
+    "personal-system/control/career-dashboard.js",
+    "personal-system/control/career-geography.cjs",
+    "personal-system/control/career-mail.cjs",
+    "personal-system/control/career-orchestrator.cjs",
+    "personal-system/control/career-tools.cjs",
+    "personal-system/control/career-worker.cjs",
+    "personal-system/control/dispatcher-v2.cjs",
+    "personal-system/control/gateway-rpc.cjs",
+    "personal-system/control/gateway-sdk.cjs",
+    "personal-system/control/mcp.cjs",
+    "personal-system/control/observability.cjs",
+    "personal-system/control/overview-v2.cjs",
+    "personal-system/control/security-monitor.cjs",
+    "personal-system/control/security-queue.cjs",
+    "personal-system/control/site-tools.cjs",
+    "scripts/check-adapted-agent-tools.cjs"
+  ],
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 119,
+      "sha256": "b9fe0aa477c600fd585cf0cb0657a03d48d40d1d3be3dc7f4919e596626d2039",
+      "mode": "644"
+    },
+    {
+      "path": ".github/workflows/validate.yml",
+      "bytes": 726,
+      "sha256": "2cb3829d32d562ea65b0fa51050dd7302304d055c46fc7c83d4f9ea4335509ac",
+      "mode": "644"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 992,
+      "sha256": "7f9333b3a9a78238ab7cce17d3a12c7c406e625d92e47a52f042028f47f26248",
+      "mode": "644"
+    },
+    {
+      "path": ".node-version",
+      "bytes": 8,
+      "sha256": "9185b9f67843cabfa8054f65ce47ce0b52036b0bfe07ae5a6b834d97cc127140",
+      "mode": "644"
+    },
+    {
+      "path": "app/package-lock.json",
+      "bytes": 247480,
+      "sha256": "26c156e95b7cf1ed05c2b972e252ce6197b1341dbff08a44b2c48c155baeb1ff",
+      "mode": "644"
+    },
+    {
+      "path": "app/package.json",
+      "bytes": 524,
+      "sha256": "dee939a1727b3e1ce1b7907ae2c4e0aa3479ddf987c3c58f155cdb402cf4f67f",
+      "mode": "644"
+    },
+    {
+      "path": "app/vendor/npm-12.2.1.tgz",
+      "bytes": 3151319,
+      "sha256": "a0d04d28cf90127af64bc9656bbe6d668d27b52387f5cbdbece4d209ac40434a",
+      "mode": "644"
+    },
+    {
+      "path": "app/vendor/npm-security-package-lock.json",
+      "bytes": 46239,
+      "sha256": "7d0c2dea91ecc0c3e2178e13c69b2b18b07c00a37b0a413c29f112b31945060c",
+      "mode": "644"
+    },
+    {
+      "path": "app/vendor/npm-security-package.json",
+      "bytes": 6378,
+      "sha256": "7e32f11306c87ef0d2edd7493e39aef8a0a2ef0855780c0c8af7bb3c2a08791e",
+      "mode": "644"
+    },
+    {
+      "path": "app/vendor/npm-security-provenance.json",
+      "bytes": 600,
+      "sha256": "89bd47b4152bf187da55357745e6bddb627dfe523dba786cebcfee4e29d4b3b6",
+      "mode": "644"
+    },
+    {
+      "path": "app/vendor/README.md",
+      "bytes": 1066,
+      "sha256": "5c38ea0b2c9fd4e5ff1e95be7cc474ea9b1043e6a6639da4e802812b31905b9a",
+      "mode": "644"
+    },
+    {
+      "path": "config-templates/control/backup-policy.json",
+      "bytes": 135,
+      "sha256": "cc70c78d81295d430860848d21a2e8b55a828e3cf696cac2f62d988c68b972bb",
+      "mode": "644"
+    },
+    {
+      "path": "config-templates/control/career-employer-policy.json",
+      "bytes": 101,
+      "sha256": "8aac097d1c2d293e13203d2fd3a251dd860338ff62a0af7134420f86de210605",
+      "mode": "644"
+    },
+    {
+      "path": "config-templates/control/career-geography-policy.json",
+      "bytes": 223,
+      "sha256": "5c810cdc1039f3eafd225bef5d4ec803f832f25ca9cfa8d095cee8ff751ab3c8",
+      "mode": "644"
+    },
+    {
+      "path": "config-templates/control/career-geography-reference.json",
+      "bytes": 543,
+      "sha256": "3a2329a085058c8be11dc4a13b94098b07b57dcb56709f5a2bc1093edf561838",
+      "mode": "644"
+    },
+    {
+      "path": "config-templates/control/career-market-policy.json",
+      "bytes": 64,
+      "sha256": "e313e39bbfe29ac092f3f50a1e4fdc1293f5b89b032446acbdfcb945422c9ca6",
+      "mode": "644"
+    },
+    {
+      "path": "config-templates/control/career-orchestration.json",
+      "bytes": 115,
+      "sha256": "a1a647ed49cfbe83065858969a5404bfd902fa7ed3692b88f08fab7743dff0b5",
+      "mode": "644"
+    },
+    {
+      "path": "config-templates/control/career-search-policy.json",
+      "bytes": 197,
+      "sha256": "03fd7c83b2a784f2660b3e7b9492ab2c6e2928352d247cca0f5c78c178990978",
+      "mode": "644"
+    },
+    {
+      "path": "config-templates/control/career-sources.json",
+      "bytes": 172,
+      "sha256": "ff16ed7b50c1cb5d2361168b528686edff2b788fbea84202399cf189f851c251",
+      "mode": "644"
+    },
+    {
+      "path": "config-templates/control/learning-policy.json",
+      "bytes": 280,
+      "sha256": "c295064728b9cb86c6d1dfdfe0c1d6d8cb6291e5646fd869e6667c4028404c2a",
+      "mode": "644"
+    },
+    {
+      "path": "config-templates/control/metrics.json",
+      "bytes": 80,
+      "sha256": "377d0b4a15b078b34cf7d929bef40c1afa1124261356b1017f93a045e7a7140d",
+      "mode": "644"
+    },
+    {
+      "path": "config-templates/control/model-policy.json",
+      "bytes": 3178,
+      "sha256": "5e62b07b36ca5b9be839d66fe80a27c27b883ab7c85fa05a2ca353e8bf03923f",
+      "mode": "644"
+    },
+    {
+      "path": "config-templates/control/projects.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "mode": "644"
+    },
+    {
+      "path": "config-templates/control/roles.json",
+      "bytes": 5184,
+      "sha256": "8bc3ad2fcc4335f31d6a243d74c76c2fa51749387d19777d1ff5a19274547b27",
+      "mode": "644"
+    },
+    {
+      "path": "config-templates/control/schedules.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "mode": "644"
+    },
+    {
+      "path": "config-templates/control/security-policy.json",
+      "bytes": 374,
+      "sha256": "55097b4ed29fa8a6cd5647de26c1d544d1129ed693dceac8b101d4456fe26ddf",
+      "mode": "644"
+    },
+    {
+      "path": "config-templates/control/sources.json",
+      "bytes": 1128,
+      "sha256": "11c2f7006b9f42be61fadeff74b73fae5ce15bbba9c4f419880abfb6e4f801c3",
+      "mode": "644"
+    },
+    {
+      "path": "config-templates/control/temporary-roles.json",
+      "bytes": 67,
+      "sha256": "f546a89cfb9193e06cc59b42ab9cdb9744f31fa0a8ce313f7eee68e58b152a2a",
+      "mode": "644"
+    },
+    {
+      "path": "config-templates/control/workflows.json",
+      "bytes": 248,
+      "sha256": "dbc6b6bce98a05a5135a6d22c90b70f17c520653c7f8ddc117421f8e9f4106a3",
+      "mode": "644"
+    },
+    {
+      "path": "config-templates/data/career-answer-library.json",
+      "bytes": 36,
+      "sha256": "7c1051f6e2bc3943b7c1dbe4da229694455681b8875a346c99279e555edb733f",
+      "mode": "644"
+    },
+    {
+      "path": "config-templates/data/career-campaign.json",
+      "bytes": 48,
+      "sha256": "3088b52541378d010f665f1c476479560167cd60f0af04f28ecdf745abf80ff4",
+      "mode": "644"
+    },
+    {
+      "path": "config-templates/data/career-preparation.json",
+      "bytes": 163,
+      "sha256": "62ece7a05a84bf45945a62175cccc0334c900047dffe274e710022d073ec40e6",
+      "mode": "644"
+    },
+    {
+      "path": "config-templates/README.md",
+      "bytes": 959,
+      "sha256": "8d81658ebd36eda1ef5b1a78acd80c1e4c61835f7fb08bb44c11def34ee18891",
+      "mode": "644"
+    },
+    {
+      "path": "config-templates/state/openclaw.json",
+      "bytes": 2747,
+      "sha256": "bcbbc95b76dd1fd6ede960231f597e5ae3e13af2c24ff50af1bd7e8f5ca7c39b",
+      "mode": "644"
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "bytes": 1942,
+      "sha256": "8e9effebbab56c554b7e394baed3679a927147d4c129be4cc134f7f44149a105",
+      "mode": "644"
+    },
+    {
+      "path": "docs/LIMITATIONS.md",
+      "bytes": 1827,
+      "sha256": "30888e8017240fd9bb977941d7f16ce1a80cc312dd68b843ac9cb09bc86db8b9",
+      "mode": "644"
+    },
+    {
+      "path": "docs/LOCALIZATION.md",
+      "bytes": 925,
+      "sha256": "5ab76cba68ea7dd0cc88cd9f35ebecf9f49f15eb62e2314e6176506adf9173e7",
+      "mode": "644"
+    },
+    {
+      "path": "docs/PRIVACY.md",
+      "bytes": 2345,
+      "sha256": "ddb593812128e5a7e9be0e284ad24b67b735da14b791ced11b87559fa282fb6e",
+      "mode": "644"
+    },
+    {
+      "path": "docs/SETUP.md",
+      "bytes": 2308,
+      "sha256": "f068cca5bab554919dacac834635ca206895cc83997ac4de1ee163ce6c8673f9",
+      "mode": "644"
+    },
+    {
+      "path": "docs/STRUCTURE.md",
+      "bytes": 1992,
+      "sha256": "3b21fe7aa5255f8fbf4b4042923eccf896630873fbc696a8bf888e486f7c9bf1",
+      "mode": "644"
+    },
+    {
+      "path": "docs/WINDOWS_PORT_PROMPT.md",
+      "bytes": 5559,
+      "sha256": "da887106ea5b399544a10ed9f3601b93a894ba559f2d127b85de52b29a6c021f",
+      "mode": "644"
+    },
+    {
+      "path": "docs/WINDOWS.md",
+      "bytes": 4885,
+      "sha256": "dbea962fdda3f444bd9c857419086efbfcf2dbe00b456759c8326e803677a92b",
+      "mode": "644"
+    },
+    {
+      "path": "extensions/personal-operations/dist/control-ui/51b84bcfebc5b31a/index.css",
+      "bytes": 3235,
+      "sha256": "297dc0d9aa5c829e2f6f16b8c6a0d5095b0a3bf90f4acd0443755cbcb4f8a0dc",
+      "mode": "644"
+    },
+    {
+      "path": "extensions/personal-operations/dist/control-ui/51b84bcfebc5b31a/index.js",
+      "bytes": 9865,
+      "sha256": "e4e3e1066741bd56df9450ad7bedef19dc32d0a62f7c5f9c96a3a333b2895613",
+      "mode": "644"
+    },
+    {
+      "path": "extensions/personal-operations/index.mjs",
+      "bytes": 578,
+      "sha256": "01743b1f1033b84548a697be31824bd19a2bb33ca7a384ae7fc8244123382348",
+      "mode": "644"
+    },
+    {
+      "path": "extensions/personal-operations/openclaw.plugin.json",
+      "bytes": 577,
+      "sha256": "25b64db646aa05b174319b8e6039563ac7ae80454b33a9e5bc905832a009ddf4",
+      "mode": "644"
+    },
+    {
+      "path": "extensions/personal-operations/package.json",
+      "bytes": 341,
+      "sha256": "9f2ac48275f4682ce8999409d226b8bc30ff80d95721af8f46690fcb87631960",
+      "mode": "644"
+    },
+    {
+      "path": "extensions/personal-operations/status.cjs",
+      "bytes": 10392,
+      "sha256": "f985d82ddfa588755be60bdc44e30a0cdcd8e0419f74b89f8bfa0f527a2d9a4d",
+      "mode": "644"
+    },
+    {
+      "path": "extensions/personal-operations/ui/index.js",
+      "bytes": 9865,
+      "sha256": "e4e3e1066741bd56df9450ad7bedef19dc32d0a62f7c5f9c96a3a333b2895613",
+      "mode": "644"
+    },
+    {
+      "path": "extensions/personal-operations/ui/style.css",
+      "bytes": 3235,
+      "sha256": "297dc0d9aa5c829e2f6f16b8c6a0d5095b0a3bf90f4acd0443755cbcb4f8a0dc",
+      "mode": "644"
+    },
+    {
+      "path": "integrations/outlook/package-lock.json",
+      "bytes": 94751,
+      "sha256": "c1c6e2ddb8a1c71d2f4ff0c15bcd027c9ddeaeda363a9a0a3c947b639aa7f309",
+      "mode": "644"
+    },
+    {
+      "path": "integrations/outlook/package.json",
+      "bytes": 199,
+      "sha256": "f3c8d3c8290c9a300244cf601f77abb9ba55649a0c2060a715ec8c27710149f8",
+      "mode": "644"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 13317,
+      "sha256": "9c1f29d2a39865e7afd3ec25f08ce1ce9ccbad89e247e76f3e578e6dd5f25253",
+      "mode": "644"
+    },
+    {
+      "path": "package.json",
+      "bytes": 825,
+      "sha256": "dfe2f28611cc1ff99ed9503871989782f2b6a7dbbd4afd04c915c69fa66339b3",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/acquisition-owner.cjs",
+      "bytes": 593,
+      "sha256": "167b830a44c3773e66cf7914f49d8572d5edaa258039a20403c5c7d99ea6bbc3",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/acquisition-review.cjs",
+      "bytes": 1503,
+      "sha256": "fd9e14e38929368dbb04ca1fb99e012b6d59638fb5f06b123ce933c6ab5f3449",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/acquisition-tools.cjs",
+      "bytes": 2758,
+      "sha256": "5ee6c152733b6b29042191b5a676cb9140d19f3d3bcea9c7f504befc9acd6a5b",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/acquisition.cjs",
+      "bytes": 27861,
+      "sha256": "e10ac25222daf3ed2053815a5e5bb20a7234b88cd8ee55228d8d63b433bad233",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/ai-budget.cjs",
+      "bytes": 2395,
+      "sha256": "80b5299f64e43a36f509cba8e18c14e99a9492c7ebe63c6d81620e16c89c61f6",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/backup-check.cjs",
+      "bytes": 716,
+      "sha256": "6f39d615cf956e5675d46e538b5d537a267fe544a620603e498ca577d80be4d9",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/career-answer-refresh.cjs",
+      "bytes": 1864,
+      "sha256": "81e74b8d911e0b861d644c895440ddf3433f094a6cf67dd81e6a0bafddb50d27",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/career-answers.cjs",
+      "bytes": 9053,
+      "sha256": "0b38a284a2dd430717aca5db101d84d549b77a2f319ed77b7fc9daa9e5706345",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/career-application-check.cjs",
+      "bytes": 3078,
+      "sha256": "bc6d2c39c1d94779ec715f9cb4398074a2434b646872be27b42ca9c9d369344c",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/career-application-continuation.cjs",
+      "bytes": 7998,
+      "sha256": "b0288830ee6c73ee849cdddf26ec2f75e15ba6f7abd5407096ae84f371f6bf1e",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/career-browser-actions.cjs",
+      "bytes": 3528,
+      "sha256": "a0f53fde8223eceaa2e6dc9e633185cc3d57242b7daadef50e6c094c67f2e59c",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/career-browser-client.cjs",
+      "bytes": 1080,
+      "sha256": "5bdc49996cb8789494ead7fd43343cf237bd191bd5a91623fccfede85ebeb235",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/career-browser-profile.cjs",
+      "bytes": 652,
+      "sha256": "059fee1e1e15887c9fc41dcfc4a54ccb51893729ae401840182d56f170b93ea6",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/career-browser-worker.cjs",
+      "bytes": 4794,
+      "sha256": "5f13b0b4f1da86eecaa5d1ab73d05831057a7b95bb6282192ad7f46bba960c5e",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/career-campaign-runner.cjs",
+      "bytes": 3757,
+      "sha256": "0de3cdcee12d1cda81e6673fa1cb8f0b2705b4d7a9f4ed30e3d5b5c2b0ba2a0a",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/career-campaign.cjs",
+      "bytes": 9537,
+      "sha256": "d350bcd65a52ca0d747abb3a861d647796bf03b4e4cd4cf635fe55be2e10d272",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/career-choice-groups.cjs",
+      "bytes": 3831,
+      "sha256": "421be7d9679978a568605b9a17e74925e65fe6c16db1aa67ffd05a697c2a6b98",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/career-dashboard.cjs",
+      "bytes": 8740,
+      "sha256": "976ca02515e3235f5eef143072cf95bef9b3f5dc4ece813a156059408a633702",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/career-dashboard.css",
+      "bytes": 4681,
+      "sha256": "065c343a646f5efd0cc2d14c97d90e54a1c055437e8824b5915e5b6976e640c5",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/career-dashboard.html",
+      "bytes": 6921,
+      "sha256": "e33b6ec4ffe842c323eea21a45062d8602e3b3b2cc1b2f7d3f16df682ae00928",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/career-dashboard.js",
+      "bytes": 26110,
+      "sha256": "74d5ac57b2e0cc3a5106ef928d39ef398463c7674d6660e0a3b92b6ceb5feb34",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/career-discovery.cjs",
+      "bytes": 27796,
+      "sha256": "9c49c42fc09fa90ea15639f637c6fa2be0640db4fb15a8856dfb56f83ab99250",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/career-employers.cjs",
+      "bytes": 12447,
+      "sha256": "d333a95fbd4c30de6b088cb107c0a6afc082553fc04bc6ce2400ca686a160ac6",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/career-fit.cjs",
+      "bytes": 2836,
+      "sha256": "92bd5f23d01606afadaf7b904a88db9e1ee9241a570e3241708c0f9f46ef39af",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/career-form-agent.cjs",
+      "bytes": 8721,
+      "sha256": "a0da99b039d963198b37ba71d1abf1db89ebb2b75ae066842e5d747b226bec88",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/career-form-context.cjs",
+      "bytes": 3329,
+      "sha256": "a76deb754edd99ae41095148f5d30cb026eca197f4fd513be8a90f3d55d7aef9",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/career-form-fields.cjs",
+      "bytes": 1848,
+      "sha256": "2721fc85e34729b79f927bac8575d3409f4b2ce44f588f9586eabcf4c9f3f43f",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/career-form-preflight.cjs",
+      "bytes": 2842,
+      "sha256": "0eeaadac05a9b4da95820346114268e161c35b8cd47c44c00c4ccc54395b556e",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/career-geography.cjs",
+      "bytes": 14083,
+      "sha256": "c076020bdd65e52d89d8394d95006f4ba24555428bd11da59637afe23f3b23e1",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/career-hub.cjs",
+      "bytes": 28179,
+      "sha256": "d080681696b33c305a9275d034e7a4f91ddbb0b219d4becffa607502288714f0",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/career-identity.cjs",
+      "bytes": 4480,
+      "sha256": "cc097fe3acdfe32c57fefc955d2961fc0c53a7d9d61402f32eb9f2c6444ddfb1",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/career-lifecycle.cjs",
+      "bytes": 5815,
+      "sha256": "82dfb0d7bf82f8d266b78313fd005e7b2df64784786fc066a7feb633495f4997",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/career-mail-match.cjs",
+      "bytes": 4471,
+      "sha256": "7ab288d644de24065248b5657f642257c3f6be810584357547c3c72c9493074e",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/career-mail.cjs",
+      "bytes": 10180,
+      "sha256": "953625525dd09b979cdafad1da10cbdb46ca773567ac8b3e38dc0ecff4a0164e",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/career-market-priority.cjs",
+      "bytes": 4236,
+      "sha256": "d4f1a673820c4e9e972c14dc850f522ffd2ff7700087076bbdfe708a9e225dbf",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/career-orchestrator.cjs",
+      "bytes": 13485,
+      "sha256": "879037602efbb51eb2c24d09b9123eaca93fa16a2d24faf3080a9295bb2d58fa",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/career-preparation-queue.cjs",
+      "bytes": 3411,
+      "sha256": "d154b1a09fa177aa93180af00d6469f2399089de3b808a8211fead9418ad742e",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/career-preparation.cjs",
+      "bytes": 696,
+      "sha256": "7356ca01fee5680cce70d82cbc7dcea1526ba1b6b5c80f1668dd02fc2e85ad87",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/career-provider-usage.cjs",
+      "bytes": 4697,
+      "sha256": "bbf37fcfbc8caa82b6895d11ebd71ffda5e44f7539ee6b04bdf1d1baa358bcc4",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/career-resume-base.cjs",
+      "bytes": 3571,
+      "sha256": "b968ca7cedb0058feae341b3c57ecc9e465c4d53960ac489bc0bb8778aa64228",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/career-send-recovery.cjs",
+      "bytes": 1499,
+      "sha256": "ef95be045794562a7d04c189d6acaa77c2d143dcf91cdf541bc6df5999a93dda",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/career-stops.cjs",
+      "bytes": 4082,
+      "sha256": "1955ed53bffcc5167d54885ae7e7aff1127c8da876d1193e0a29c3bdbfeb88ff",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/career-submission-worker.cjs",
+      "bytes": 6201,
+      "sha256": "8c358351cf141a78ca4a0251bab545ef8701f95add440d20cb01fef6c4f4734a",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/career-submit.cjs",
+      "bytes": 22897,
+      "sha256": "d40ea9637abf62e64ef317ff2a19bd6c224f43d766f74a5e89c943871f894909",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/career-task-recovery.cjs",
+      "bytes": 970,
+      "sha256": "222dba0c848c00316d523de537669a4ac1ef9f4b4e468fe7fccf82f68c50e786",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/career-tools.cjs",
+      "bytes": 12769,
+      "sha256": "33f89ca4f46b25fd6f186649a8d0aa519bcaf0f8cc7aa28bca95134be0ad05e7",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/career-transport.cjs",
+      "bytes": 3812,
+      "sha256": "5b454d7de52ca509bd8f5de4a76b399ae36da3cdbf71d11d2cf58bf4449c034f",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/career-worker.cjs",
+      "bytes": 10717,
+      "sha256": "575725b29219172b697cddfcd47966fddc429b7d3e987a88012e42d8e43de291",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/dispatch.cjs",
+      "bytes": 202,
+      "sha256": "34327e06569fb0aad5ff0ea2d41812b43f43ad874c1dab81ac90c461511da0b9",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/dispatcher-v2.cjs",
+      "bytes": 14607,
+      "sha256": "04c5dfe77e7ebfb1b1c45a1710d1c8e95026c5ec674cc163fba268cd39b1d17d",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/gateway-rpc.cjs",
+      "bytes": 1224,
+      "sha256": "b3d9af87cc85ab56b62e543a6890e834dd4fad0a15f0469419a475f4a08655e2",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/gateway-sdk.cjs",
+      "bytes": 1037,
+      "sha256": "3a20da47ae6779f59af415f02b8c781b63b07eaae8cd4ecb7b693ea8301bf559",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/improvement-test.cjs",
+      "bytes": 1723,
+      "sha256": "bfde5c6d6b1c8adb8df204eb96d079d3c6d2d2ecef323d4cc14dcb0bd08b498c",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/learning-career-eval.cjs",
+      "bytes": 3343,
+      "sha256": "7ef0360f4cf30f120e5b262b97eee2cad879d81ee7d2e1b465155e139112af1d",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/learning-owner.cjs",
+      "bytes": 4075,
+      "sha256": "7b94ee6cfe679d7a79d7ff918aa28088ec25c49ad7b775625e9024753922411a",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/learning.cjs",
+      "bytes": 29146,
+      "sha256": "9ef8036fc121f3f721da153831b47d9530d9bf1b79180b80473d82f9d75f4563",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/mail-review.cjs",
+      "bytes": 10432,
+      "sha256": "303a6a47573d6da1b1a7fdea7fadffa7a669b677efd8475e4ad45a82100af7b2",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/mail-transport.cjs",
+      "bytes": 2335,
+      "sha256": "13670d707419edb7bff16c074363a38397638c22bdd67bb3a1c0b69e0a9d9b0c",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/mcp.cjs",
+      "bytes": 10989,
+      "sha256": "86b68a802edadee57f21c8987cf592e75660656459160734f141703544c22693",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/observability.cjs",
+      "bytes": 7494,
+      "sha256": "a3df56626a6087de9c9cce1668cf650653ff287689d4697baaef048cdb049e9a",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/operational-state.cjs",
+      "bytes": 2837,
+      "sha256": "ad089c14ded98d7ac140862506e6e3320a8a23c90f1678dd8d5a4a388d18a770",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/overview-v2.cjs",
+      "bytes": 17034,
+      "sha256": "e64f1cabb2acafa599e604a07e147dacdf0578ed1b786cd1ab94db40c1f0d51a",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/overview.cjs",
+      "bytes": 111,
+      "sha256": "59d8e07da6d1232cfad1ee6c56b677c6c7b02d530fb4c3d12f58beac9d5dda6f",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/owner-run-task.cjs",
+      "bytes": 1938,
+      "sha256": "2452617590be5e7a009b3c0003ca977644138e094ba7f6400a04065263ca9140",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/queue-contract.cjs",
+      "bytes": 6562,
+      "sha256": "e51f1128112db463bf5f41000cc173c174566e94ce798d05b5a33479fe9eaafd",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/registry.cjs",
+      "bytes": 12280,
+      "sha256": "bd867b749c949e590e53a1a3aeca5750a58973a6e1a0f3c7b41527ec0954c61a",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/render-overview.cjs",
+      "bytes": 156,
+      "sha256": "ecb8867612a5214875b286664e745b433309248f1e7fffa763f973ba8f4d772c",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/result-telemetry.cjs",
+      "bytes": 1960,
+      "sha256": "d73408fd56848784acd02b03dee39216d4ae690475bdcdfc1858cc0a86348d4e",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/routing.cjs",
+      "bytes": 3157,
+      "sha256": "d4477df584906c87f690d5adba303cc6b13a3de3d31a3f488d6e358096b45ed5",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/security-monitor.cjs",
+      "bytes": 26349,
+      "sha256": "abc9f1da6c04f1bec66d16c90f1a10a5856d2d39ffd77fb8029a0249e9f3d52d",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/security-queue.cjs",
+      "bytes": 4778,
+      "sha256": "df679baedd0f18642a6eab3deca9004e8c5b115e58534355ebc6191c7a34fad0",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/security-ubuntu.cjs",
+      "bytes": 11551,
+      "sha256": "e0c6c76e7ff9977da233cb21ac9dacbba24f093a5080950f45d512b429f87404",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/site-tools.cjs",
+      "bytes": 9122,
+      "sha256": "23ee5d5f0289c82d02e7024c2c1145f4ba1804b5a2d3033408fb7dec25187eef",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/source-readiness.cjs",
+      "bytes": 1202,
+      "sha256": "80248dd5cbd2e00ec9a6a905ce4a71bfc01ec795bd7be6ef89f6e55845500dd6",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/start-career-browser-worker.cjs",
+      "bytes": 1356,
+      "sha256": "e9ef0ab66d19962bf4de99899006061041e665bfde82927a455f3bc7501b298c",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/start-career-dashboard.cjs",
+      "bytes": 1409,
+      "sha256": "35fe8455522aaa4fb7396b12e8ec7dd4ecf2cb2d26b0359457f26a1880eff76e",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/start-career-orchestrator.cjs",
+      "bytes": 1301,
+      "sha256": "7da18b0cbbd22d177cee17c6c87bb105db86eb2a4b1e5d4259fc4d1e09ec01da",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/start-career-preparation.cjs",
+      "bytes": 2784,
+      "sha256": "a06fbd95dac225f3607d5deab3ef5110b44491ebf3b0177b7d0b8db58a6ecffb",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/stop-gateway.cjs",
+      "bytes": 2600,
+      "sha256": "adbbe99bc602a1b6464c3606c669c6f325cac7d8662318bba0cae33c7624d71c",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/task-access.cjs",
+      "bytes": 4058,
+      "sha256": "462cbe0e9305b351aeb0b03db8a9483a0337cd3b1542de1454cc2e38c1935528",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/time-boundary.cjs",
+      "bytes": 551,
+      "sha256": "b3b05ad409da476aa92a23b6cac54a888cff6d02b1bab95f65cd2bf211f6159f",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/tool-input.cjs",
+      "bytes": 3335,
+      "sha256": "55ce7ecf8f05741caee53b15c1b2b5eef6dadd66262a3569981d1e75d5fe2401",
+      "mode": "644"
+    },
+    {
+      "path": "personal-system/control/ubuntu-migration-test.cjs",
+      "bytes": 9394,
+      "sha256": "cd4382300ea8fe7710ee6ab6f86490941284c0c67f9b816e19d4ceaf472575ab",
+      "mode": "644"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2837,
+      "sha256": "c942c7ad3e98a428638a02b43bcc46b149c0c2b18847b4be32d75e82ddf24dbe",
+      "mode": "644"
+    },
+    {
+      "path": "scripts/ai-system.sh",
+      "bytes": 1558,
+      "sha256": "c8fb1b93a8c6320994c2ba2299aae0fb86abc4c99fea750bfa535dfec285b939",
+      "mode": "755"
+    },
+    {
+      "path": "scripts/benchmark-headhunter.cjs",
+      "bytes": 1133,
+      "sha256": "cc1310ee1054b3c2840358ed21348040e06ba13ffae3b313898b3740fd41dd96",
+      "mode": "644"
+    },
+    {
+      "path": "scripts/build-personal-operations-ui.cjs",
+      "bytes": 1102,
+      "sha256": "b5b3f80612f8ec79e9177331f0197985c456a7240db70e1ed991b640a7c77434",
+      "mode": "644"
+    },
+    {
+      "path": "scripts/career-dashboard-readonly.cjs",
+      "bytes": 391,
+      "sha256": "9834b79f5e60a332d6efc0875e9679952d629e58e31537e0969a951de3ba913c",
+      "mode": "644"
+    },
+    {
+      "path": "scripts/check-adapted-agent-tools.cjs",
+      "bytes": 3856,
+      "sha256": "04d8ddc2784e982caafe463c3ff25c468c5e432362508f32190176f3d1428ede",
+      "mode": "644"
+    },
+    {
+      "path": "scripts/check-agent-chat.cjs",
+      "bytes": 4775,
+      "sha256": "3ef8105b64f8c0a5b0d25abca3d8d9421ea628c2c5fd6a74e20ca700be9a453e",
+      "mode": "644"
+    },
+    {
+      "path": "scripts/check-english.cjs",
+      "bytes": 2401,
+      "sha256": "4d5f8fcbcd8f47da0f37c9213b7a6d22d8379457f0b6cf27e897a4aaaafecfd1",
+      "mode": "644"
+    },
+    {
+      "path": "scripts/check-runtime-safety.cjs",
+      "bytes": 4708,
+      "sha256": "f70a8910d8e657f1fabe372b5812324adfce7af1e22f217755ea03abbed3e768",
+      "mode": "644"
+    },
+    {
+      "path": "scripts/diagnose-ai-system.cjs",
+      "bytes": 2702,
+      "sha256": "331e3afedb3515edb93f4fb12b99c5fd359970c52e93fd3fc1b537b212052c85",
+      "mode": "644"
+    },
+    {
+      "path": "scripts/install-ai-system.py",
+      "bytes": 3063,
+      "sha256": "2717727413d7d49d00466e7f997f45a5685ae6ca22492043ae00c78330a2eb87",
+      "mode": "644"
+    },
+    {
+      "path": "scripts/openclaw-linux.sh",
+      "bytes": 599,
+      "sha256": "c6a4c001b13d0ed9cc91458d1da0f244266172aed296a8aceebe0681cc70597c",
+      "mode": "755"
+    },
+    {
+      "path": "scripts/outlook-auth.cjs",
+      "bytes": 1680,
+      "sha256": "b0e2db66bcef408dd2d95b02b85116da692c57c2e38c0afc398e94d518a56fb3",
+      "mode": "644"
+    },
+    {
+      "path": "scripts/prepare-config.cjs",
+      "bytes": 1826,
+      "sha256": "e0bfbdd1ce33339a04fdfd53355345991de646c3b7f3866f0276d5190adb0bff",
+      "mode": "644"
+    },
+    {
+      "path": "scripts/prepare-control-ui.cjs",
+      "bytes": 2416,
+      "sha256": "aaae9dcdb429f471b50cd7cac7a5fe52a94474c32d7bbbf9de9aed17f0cc74f7",
+      "mode": "644"
+    },
+    {
+      "path": "scripts/run-ai-system-terminal.sh",
+      "bytes": 2026,
+      "sha256": "ec602ee23ad6fd56692ad6f0af36f5e50d6df7dcb79de9a1e4608925a9b9feff",
+      "mode": "755"
+    },
+    {
+      "path": "scripts/systemd/ai-system-dashboard.service.in",
+      "bytes": 460,
+      "sha256": "77a80c93b823bcd758274e456b47b2df9a3e99dc8de1afc3639983295bbad804",
+      "mode": "644"
+    },
+    {
+      "path": "scripts/systemd/ai-system-gateway.service.in",
+      "bytes": 703,
+      "sha256": "8eb8b4bb9a4e44440de360f1a59c92b27d588e7448c7f2c35a89ad2ef2b1da8d",
+      "mode": "644"
+    },
+    {
+      "path": "scripts/systemd/ai-system.target.in",
+      "bytes": 197,
+      "sha256": "b5f8c17692b445bbb56263a01cb061136dcb23acf0e534d5edb09edf01302733",
+      "mode": "644"
+    },
+    {
+      "path": "scripts/verify-clean-source.cjs",
+      "bytes": 2920,
+      "sha256": "cefce9f59c88bc0daa1cc1377161df2f490288573ef8ab5892dd8826ae25f239",
+      "mode": "644"
+    },
+    {
+      "path": "scripts/wait-ai-service.cjs",
+      "bytes": 2378,
+      "sha256": "dcac0eb82c6b554d1d1d87e5f0aa1ff5281666b7cc3ce057e67b8f815a5b30c0",
+      "mode": "644"
+    },
+    {
+      "path": "tests/engineering.test.cjs",
+      "bytes": 9891,
+      "sha256": "ba7dea036333f7bb54d00d77b71b3ed504d14fe991f2aa41ec09ee33bd094187",
+      "mode": "644"
+    },
+    {
+      "path": "tests/fixture.cjs",
+      "bytes": 3896,
+      "sha256": "5ed372a827045809c2f094808626a7c6449ed04fd1129e4b9a4ef5b748332d55",
+      "mode": "644"
+    },
+    {
+      "path": "tests/headhunter-scenario.cjs",
+      "bytes": 5276,
+      "sha256": "ab92a23310cbcb59c80a8c9487e7cee28130bac1bbb5cd28cdeddcece692c040",
+      "mode": "644"
+    },
+    {
+      "path": "tests/headhunter.test.cjs",
+      "bytes": 407,
+      "sha256": "4e1466dfb443659b44030508aa9cb42d2396edcca2bbe9e75c692fa3ddd80a11",
+      "mode": "644"
+    },
+    {
+      "path": "tests/localization.test.cjs",
+      "bytes": 1668,
+      "sha256": "365e62ff0cd1579fe3ecea7153c26436f375e4ae6e548452cf7529d4d84c6d95",
+      "mode": "644"
+    },
+    {
+      "path": "tests/operations.test.cjs",
+      "bytes": 3614,
+      "sha256": "c7f899534a20fc680f9a910021a6f40863304b1b62b74c02aebf3cd5125f4fbd",
+      "mode": "644"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 835,
+      "sha256": "472ae92b4d81878b0e98db0f19decd03ab489edfd3e9a507fea192e178e43dba",
+      "mode": "644"
+    },
+    {
+      "path": "tsconfig.json",
+      "bytes": 470,
+      "sha256": "86afa2158b0dc5b6d2e41085e5f13b7c271842a1b851dc600f809a8e2925074e",
+      "mode": "644"
+    },
+    {
+      "path": "types/contracts.d.ts",
+      "bytes": 3668,
+      "sha256": "b842569f5fc10fabb295165296a1b5805852744000af74d66bf19de85bdcdd3c",
+      "mode": "644"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "version": "unconfirmed-template-v1",
+  "confirmed": false,
+  "search_programs": [
+    "engineering"
+  ],
+  "outbound_enabled": false,
+  "auto_apply_enabled": false,
+  "owner_evidence": null
+}

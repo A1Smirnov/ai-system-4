@@ -1,0 +1,15 @@
+{
+  "name": "personal-operations",
+  "version": "1.0.1",
+  "type": "module",
+  "private": true,
+  "description": "Read-only status of the owner's OpenClaw agents, queues, schedules and Node processes",
+  "peerDependencies": {
+    "openclaw": ">=2026.10.5 <=2026.10.9"
+  },
+  "openclaw": {
+    "extensions": [
+      "./index.mjs"
+    ]
+  }
+}

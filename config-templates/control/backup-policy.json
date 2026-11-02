@@ -1,0 +1,7 @@
+{
+  "enabled": false,
+  "destination": null,
+  "status": "paused_by_owner",
+  "delete_versions": false,
+  "overwrite_restore": false
+}

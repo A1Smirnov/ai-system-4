@@ -1,0 +1,24 @@
+{
+  "name": "ai-openclaw-runtime",
+  "private": true,
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=24.22.1 <25 || >=26.12.1"
+  },
+  "dependencies": {
+    "openclaw": "2026.10.9"
+  },
+  "allowScripts": {
+    "openclaw@2026.10.9": true,
+    "esbuild@0.28.2": true,
+    "koffi@3.3.2": true,
+    "protobufjs@7.6.6": true,
+    "@google/genai@2.27.0": true
+  },
+  "overrides": {
+    "zod@4.6.5": "4.6.7",
+    "undici@8.11.2": "8.12.3",
+    "minimatch@<11.0.1": "11.0.3",
+    "npm": "file:../../vendor/npm-12.2.1.tgz"
+  }
+}

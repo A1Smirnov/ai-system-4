@@ -1,0 +1,18 @@
+[Unit]
+Description=AI-System Headhunter dashboard (read-only)
+Requires=ai-system-gateway.service
+After=ai-system-gateway.service
+PartOf=ai-system.target
+
+[Service]
+Type=simple
+WorkingDirectory=@ROOT@
+ExecStart=@NODE_BIN@/node @ROOT@/scripts/career-dashboard-readonly.cjs
+ExecStartPost=@NODE_BIN@/node @ROOT@/scripts/wait-ai-service.cjs dashboard
+Restart=on-failure
+RestartSec=5
+KillSignal=SIGTERM
+KillMode=mixed
+TimeoutStartSec=45
+TimeoutStopSec=60
+UMask=0077

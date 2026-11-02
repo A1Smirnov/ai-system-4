@@ -1,0 +1,4 @@
+[Unit]
+Description=AI-System: manual agent chats and Headhunter dashboard
+Requires=ai-system-gateway.service ai-system-dashboard.service
+After=ai-system-gateway.service ai-system-dashboard.service

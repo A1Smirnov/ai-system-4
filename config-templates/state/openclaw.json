@@ -1,0 +1,128 @@
+{
+  "gateway": {
+    "mode": "local",
+    "bind": "loopback",
+    "port": 18789,
+    "auth": {
+      "mode": "token",
+      "token": "CONFIGURE_LOCALLY_DO_NOT_COMMIT"
+    }
+  },
+  "cron": {
+    "enabled": false
+  },
+  "agents": {
+    "defaults": {
+      "heartbeat": {
+        "every": "0m"
+      }
+    },
+    "entries": {
+      "main": {
+        "workspace": "${AI_ROOT}/workspace",
+        "heartbeat": {
+          "every": "0m"
+        },
+        "tools": {
+          "profile": "minimal"
+        }
+      },
+      "mail-1": {
+        "workspace": "${AI_ROOT}/personal-system/workspaces/mail-1",
+        "heartbeat": {
+          "every": "0m"
+        },
+        "tools": {
+          "profile": "minimal"
+        }
+      },
+      "backup-1": {
+        "workspace": "${AI_ROOT}/personal-system/workspaces/backup-1",
+        "heartbeat": {
+          "every": "0m"
+        },
+        "tools": {
+          "profile": "minimal"
+        }
+      },
+      "security-1": {
+        "workspace": "${AI_ROOT}/personal-system/workspaces/security-1",
+        "heartbeat": {
+          "every": "0m"
+        },
+        "tools": {
+          "profile": "minimal"
+        }
+      },
+      "headhunter-1": {
+        "workspace": "${AI_ROOT}/personal-system/workspaces/headhunter-1",
+        "heartbeat": {
+          "every": "0m"
+        },
+        "tools": {
+          "profile": "minimal"
+        }
+      },
+      "webdev-1": {
+        "workspace": "${AI_ROOT}/personal-system/workspaces/webdev-1",
+        "heartbeat": {
+          "every": "0m"
+        },
+        "tools": {
+          "profile": "minimal"
+        }
+      },
+      "elder-1": {
+        "workspace": "${AI_ROOT}/personal-system/workspaces/elder-1",
+        "heartbeat": {
+          "every": "0m"
+        },
+        "tools": {
+          "profile": "minimal"
+        }
+      },
+      "security-web-1": {
+        "workspace": "${AI_ROOT}/personal-system/workspaces/security-web-1",
+        "heartbeat": {
+          "every": "0m"
+        },
+        "tools": {
+          "profile": "minimal"
+        }
+      },
+      "analytics-1": {
+        "workspace": "${AI_ROOT}/personal-system/workspaces/analytics-1",
+        "heartbeat": {
+          "every": "0m"
+        },
+        "tools": {
+          "profile": "minimal"
+        }
+      },
+      "clients-1": {
+        "workspace": "${AI_ROOT}/personal-system/workspaces/clients-1",
+        "heartbeat": {
+          "every": "0m"
+        },
+        "tools": {
+          "profile": "minimal"
+        }
+      }
+    }
+  },
+  "tools": {
+    "profile": "minimal",
+    "sessions": {
+      "visibility": "self"
+    },
+    "agentToAgent": {
+      "enabled": false
+    },
+    "elevated": {
+      "enabled": false
+    },
+    "exec": {
+      "mode": "deny"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "noEmit": true,
+    "strict": true,
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "target": "ES2023",
+    "types": ["node"]
+  },
+  "files": [
+    "types/contracts.d.ts",
+    "personal-system/control/career-identity.cjs",
+    "personal-system/control/career-browser-profile.cjs",
+    "personal-system/control/time-boundary.cjs",
+    "personal-system/control/tool-input.cjs"
+  ]
+}

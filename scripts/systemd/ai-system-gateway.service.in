@@ -1,0 +1,22 @@
+[Unit]
+Description=AI-System OpenClaw Gateway
+PartOf=ai-system.target
+StartLimitIntervalSec=300
+StartLimitBurst=2
+
+[Service]
+Type=simple
+WorkingDirectory=@ROOT@
+Environment="PATH=@NODE_BIN@:/usr/local/bin:/usr/bin:/bin"
+Environment=OPENCLAW_SYSTEMD_UNIT=ai-system-gateway.service
+ExecStartPre=@NODE_BIN@/node @ROOT@/scripts/wait-ai-service.cjs preflight
+ExecStartPre=@NODE_BIN@/node @ROOT@/personal-system/control/security-ubuntu.cjs collect
+ExecStart=@ROOT@/scripts/openclaw-linux.sh gateway run --bind loopback
+ExecStartPost=@NODE_BIN@/node @ROOT@/scripts/wait-ai-service.cjs gateway
+Restart=on-failure
+RestartSec=10
+KillSignal=SIGTERM
+KillMode=mixed
+TimeoutStartSec=480
+TimeoutStopSec=400
+UMask=0077

@@ -1,0 +1,15 @@
+{
+  "version": "unconfigured-template-v1",
+  "platform": "linux",
+  "collection_mode": "startup-and-manual",
+  "home": "${AI_ROOT}",
+  "site_root": null,
+  "code_files": [],
+  "external_urls": [],
+  "allowed_hosts": [],
+  "automatic_remediation": false,
+  "backup_remains_paused": true,
+  "new_providers": false,
+  "local_notifications": false,
+  "host_stale_minutes": 45
+}

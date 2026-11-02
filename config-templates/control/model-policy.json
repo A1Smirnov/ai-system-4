@@ -1,0 +1,170 @@
+{
+  "version": "unconfigured-template-v1",
+  "active_auth": {
+    "provider": "openai",
+    "profile": "CONFIGURE_LOCAL_AUTH_PROFILE",
+    "billing": "existing-subscription-oauth",
+    "api_enabled": false,
+    "explicit_session_pin_verified": false
+  },
+  "models": {
+    "sol": "openai/gpt-6.1-sol",
+    "luna": "openai/gpt-6-luna"
+  },
+  "pilot": {
+    "luna_approved": false,
+    "sol_approved": false,
+    "limitations": "No provider/model pilot has been performed in a new installation."
+  },
+  "limits": {
+    "background_concurrency": 2,
+    "daily_turns": 0,
+    "attempts": 1,
+    "timeout_seconds": 180,
+    "max_contract_chars": 16000,
+    "max_sources": 20,
+    "automatic_escalation_retries": 0,
+    "runtime_slots": 3,
+    "second_slot_min_available_ram_mib": 3072,
+    "second_slot_max_cpu_percent": 70,
+    "daily_owner_requested_turns": 0,
+    "daily_total_turns": 0
+  },
+  "operations": {
+    "coordinate": {
+      "tier": "sol"
+    },
+    "develop": {
+      "tier": "sol"
+    },
+    "analyze": {
+      "tier": "sol"
+    },
+    "draft": {
+      "tier": "sol"
+    },
+    "review": {
+      "tier": "sol"
+    },
+    "classify": {
+      "tier": "luna"
+    },
+    "extract": {
+      "tier": "luna"
+    },
+    "summarize_preliminary": {
+      "tier": "luna"
+    },
+    "check": {
+      "tier": "tools"
+    },
+    "collect": {
+      "tier": "tools"
+    },
+    "calculate": {
+      "tier": "tools"
+    }
+  },
+  "escalation_reasons": [
+    "contradiction",
+    "missing_evidence",
+    "schema_error",
+    "important_security_decision",
+    "bounded_failure"
+  ],
+  "data_providers": {
+    "private_mail": [
+      "openai"
+    ],
+    "resume": [
+      "openai"
+    ],
+    "client_material": [
+      "openai"
+    ],
+    "security_reports": [
+      "openai"
+    ],
+    "site_aggregate": [
+      "openai"
+    ],
+    "public": [
+      "openai"
+    ],
+    "synthetic": [
+      "openai"
+    ]
+  },
+  "fallbacks": [],
+  "reasoning": {
+    "luna": "low",
+    "sol": "medium"
+  },
+  "role_data_categories": {
+    "main-1": [
+      "public",
+      "private_mail",
+      "resume",
+      "client_material",
+      "security_reports",
+      "site_aggregate",
+      "synthetic"
+    ],
+    "mail-1": [
+      "private_mail",
+      "public",
+      "synthetic"
+    ],
+    "headhunter-1": [
+      "resume",
+      "public",
+      "private_mail",
+      "synthetic"
+    ],
+    "webdev-1": [
+      "client_material",
+      "public",
+      "security_reports",
+      "site_aggregate",
+      "synthetic"
+    ],
+    "security-1": [
+      "security_reports",
+      "public",
+      "synthetic"
+    ],
+    "security-web-1": [
+      "security_reports",
+      "client_material",
+      "site_aggregate",
+      "public",
+      "synthetic"
+    ],
+    "analytics-1": [
+      "site_aggregate",
+      "public",
+      "synthetic"
+    ],
+    "backup-1": [
+      "public",
+      "synthetic"
+    ],
+    "elder-1": [
+      "public",
+      "security_reports",
+      "site_aggregate",
+      "synthetic"
+    ],
+    "clients-1": [
+      "client_material",
+      "public",
+      "private_mail",
+      "site_aggregate",
+      "synthetic"
+    ]
+  },
+  "hybrid": {
+    "paid_routes_enabled": false,
+    "budget": 0
+  }
+}

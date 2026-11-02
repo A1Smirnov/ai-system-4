@@ -1,0 +1,7 @@
+{
+  "version": "illustrative-template-v1",
+  "radius_miles": 50,
+  "boundary_buffer_miles": 5,
+  "owner_basis": "UNCONFIRMED illustrative city reference; configure from owner-approved location",
+  "sends": "No authority"
+}

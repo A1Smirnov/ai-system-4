@@ -1,0 +1,11 @@
+{
+  "version": "unconfigured-template-v1",
+  "enabled": false,
+  "automatic_application": false,
+  "max_input_chars": 9000,
+  "max_sources": 12,
+  "max_memory_candidates_per_review": 5,
+  "max_improvements_per_review": 1,
+  "max_concurrent_reviews": 1,
+  "timeout_seconds": 120
+}

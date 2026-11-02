@@ -1,0 +1,38 @@
+{
+  "registry": {
+    "state": "available",
+    "scope": "Unconfigured template; verify locally before using."
+  },
+  "new_results": {
+    "state": "available",
+    "scope": "Unconfigured template; verify locally before using."
+  },
+  "outlook_mail": {
+    "state": "awaiting_access",
+    "scope": "Unconfigured template; verify locally before using."
+  },
+  "candidate_profile": {
+    "state": "awaiting_access",
+    "scope": "Unconfigured template; verify locally before using."
+  },
+  "approved_project": {
+    "state": "awaiting_access",
+    "scope": "Unconfigured template; verify locally before using."
+  },
+  "approved_site_snapshot": {
+    "state": "awaiting_access",
+    "scope": "Unconfigured template; verify locally before using."
+  },
+  "site_aggregates": {
+    "state": "awaiting_access",
+    "scope": "Unconfigured template; verify locally before using."
+  },
+  "studio_profile": {
+    "state": "awaiting_access",
+    "scope": "Unconfigured template; verify locally before using."
+  },
+  "ubuntu_reports": {
+    "state": "awaiting_access",
+    "scope": "Unconfigured template; verify locally before using."
+  }
+}

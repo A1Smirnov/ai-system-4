@@ -1,0 +1,19 @@
+{
+  "upstream": "npm@12.2.1",
+  "local_patch": {
+    "upstreamVersion": "12.2.1",
+    "sourceCodeModified": false,
+    "changes": {
+      "undici": "6.29.1",
+      "ip-address": "10.7.5"
+    },
+    "scope": "Compatible library patches; retain upstream glob/minimatch major versions"
+  },
+  "source_comparison": {
+    "checked_source_files": 148,
+    "changed_source_files": [],
+    "upstream_npm_version": "12.2.1"
+  },
+  "tarball_sha256": "a0d04d28cf90127af64bc9656bbe6d668d27b52387f5cbdbece4d209ac40434a",
+  "remaining_advisories": "Moderate dependency findings remain; do not claim audit clean"
+}

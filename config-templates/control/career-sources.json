@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "enabled": false,
+  "max_sources": 10,
+  "max_jobs_per_source": 1000,
+  "request_timeout_ms": 10000,
+  "max_response_bytes": 1048576,
+  "sources": []
+}

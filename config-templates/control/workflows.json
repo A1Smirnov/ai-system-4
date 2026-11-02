@@ -1,0 +1,13 @@
+{
+  "version": "unconfigured-template-v1",
+  "security_watch": {
+    "mode": "startup_and_manual_reports",
+    "automatic_remediation": false
+  },
+  "acquisition": {
+    "real_send": false
+  },
+  "elder": {
+    "automatic_application": false
+  }
+}

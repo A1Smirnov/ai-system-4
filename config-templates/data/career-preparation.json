@@ -1,0 +1,10 @@
+{
+  "candidate": {
+    "name": "UNCONFIGURED",
+    "location": "UNCONFIGURED",
+    "portfolio": "https://example.invalid"
+  },
+  "case": {
+    "answers": []
+  }
+}

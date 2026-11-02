@@ -1,0 +1,24 @@
+{
+  "version": "illustrative-template-v1",
+  "source": "Illustrative city coordinates; not a verified commute reference",
+  "center": {
+    "name": "Illustrative Los Angeles city center",
+    "lat": 34.0522,
+    "lon": -118.2437,
+    "reference": "illustrative, not owner address"
+  },
+  "places": [
+    {
+      "name": "Los Angeles",
+      "lat": 34.0522,
+      "lon": -118.2437,
+      "geoid": "illustrative"
+    },
+    {
+      "name": "San Francisco",
+      "lat": 37.7749,
+      "lon": -122.4194,
+      "geoid": "illustrative"
+    }
+  ]
+}

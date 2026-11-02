@@ -1,0 +1,5 @@
+'use strict';
+const fs=require('node:fs'),path=require('node:path');
+function client(root){let cache={};const folder=path.join(root,'data/career-private/worker');async function call(action,id,options){const {port,token}=JSON.parse(fs.readFileSync(folder+'/auth.json'));const r=await fetch('http://127.0.0.1:'+port+'/'+action,{method:action==='status'?'GET':'POST',headers:{Authorization:'Bearer '+token,'Content-Type':'application/json'},...(action==='status'?{}:{body:JSON.stringify({id,options})}),signal:AbortSignal.timeout(action==='status'?5000:180000)});const value=await r.json();if(!r.ok)throw Error(value.error||'Browser worker unavailable');return value;}
+ return {refresh:async()=>{try{cache=(await call('status')).sessions||{};}catch{cache={};}return cache;},sessionStatus:id=>cache[id]||{open:false,interactive:false,submit_clicks:0,expires_at:null},execute:(_db,_root,id)=>call('execute',id),submit:(_db,_root,id,options)=>call('submit',id,options),show:id=>call('show',id),observe:(_db,_root,id)=>call('observe',id),closeAll:async()=>{}};}
+module.exports={client};

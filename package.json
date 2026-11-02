@@ -1,0 +1,22 @@
+{
+  "name": "ai-personal-system",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Personal AI agent system on OpenClaw: role-scoped tools, task registry and controlled workflows",
+  "engines": {
+    "node": ">=24.22.1 <25 || >=26.12.1"
+  },
+  "scripts": {
+    "test": "node --test --test-isolation=none personal-system/control/ubuntu-migration-test.cjs tests/*.test.cjs",
+    "typecheck": "tsc --noEmit",
+    "check": "npm run check:language && npm run typecheck && npm test",
+    "diagnose": "node scripts/diagnose-ai-system.cjs",
+    "test:clean-source": "node scripts/verify-clean-source.cjs",
+    "build:plugin-ui": "node scripts/build-personal-operations-ui.cjs",
+    "check:language": "node scripts/check-english.cjs"
+  },
+  "devDependencies": {
+    "@types/node": "24.19.2",
+    "typescript": "7.0.2"
+  }
+}

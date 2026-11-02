@@ -1,0 +1,28 @@
+{
+  "id": "personal-operations",
+  "name": "Agent Operations",
+  "version": "1.0.1",
+  "description": "Current tasks, queues, schedules and processes. Read-only.",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {}
+  },
+  "uiCapabilities": [
+    "page",
+    "navigation",
+    "accessory"
+  ],
+  "controlUi": {
+    "entry": "dist/control-ui/51b84bcfebc5b31a/index.js",
+    "styles": [
+      "dist/control-ui/51b84bcfebc5b31a/index.css"
+    ]
+  },
+  "activation": {
+    "onStartup": true
+  },
+  "contracts": {
+    "tools": []
+  }
+}
