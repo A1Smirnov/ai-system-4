@@ -10,6 +10,37 @@ This repository is a sanitized source edition of a personal prototype. Real
 workflow quality, complete runtime setup from a clean clone and independent
 backup recovery remain open work.
 
+## Screenshots
+
+Captured from the local installation on November 2, 2026. These views show
+manual operation and retained registry data; the counters do not establish
+active autonomous workers or newly verified application outcomes. Crops omit
+private workspace paths; the job queue is filtered to remote roles.
+
+### OpenClaw · Personal Operations
+
+| System overview | Agent roles and queue status |
+| --- | --- |
+| ![Personal Operations: current queue and manual runtime status](docs/images/openclaw-operations.jpg) | ![Coordinator and mail roles with current task states](docs/images/openclaw-roles.jpg) |
+
+### Headhunter · Career Control
+
+| Job registry and workflow stages | Source coverage |
+| --- | --- |
+| ![Remote job queue with filters and preparation requirements](docs/images/headhunter-jobs.jpg) | ![Career registry counters and source collection records](docs/images/headhunter-sources.jpg) |
+
+<details>
+<summary>Agent identity and tool access</summary>
+
+| Agent identity | Saved tool policy |
+| --- | --- |
+| ![OpenClaw agent identity settings](docs/images/openclaw-agent-overview.jpg) | ![Minimal tool profile and saved access settings](docs/images/openclaw-tool-access.jpg) |
+
+The tool screen shows native saved settings; it does not demonstrate a complete
+MCP workflow or OS-level isolation.
+
+</details>
+
 ## Main workflows
 
 - **Task coordination:** bounded contracts, one responsible role, evidence
