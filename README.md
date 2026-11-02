@@ -1,22 +1,87 @@
-# AI-System · distilled source edition
+# AI-System
 
-An application layer for OpenClaw with ten agent roles, a SQLite task registry,
-role-scoped MCP tools, a local dashboard and workflows for mail, job research,
-security reports and reviewed improvements. The control code uses CommonJS
-JavaScript; a small set of modules also passes strict TypeScript checking.
+AI-System is a personal AI workflow system built on OpenClaw. Ten agent roles
+use a shared SQLite task registry and role-scoped Model Context Protocol (MCP)
+tools to coordinate research, prepare job applications, review mail and analyze
+security reports.
 
-This is a sanitized source snapshot, not a backup of a configured installation.
-It includes current application code and dependency locks. It contains no
-accounts, conversations, candidate materials, job records or working permissions.
-The existing Git history is intentionally absent.
+It runs on Ubuntu with local state and separately configured model providers.
+This repository is a sanitized source edition of a personal prototype. Real
+workflow quality, complete runtime setup from a clean clone and independent
+backup recovery remain open work.
 
-## Platform history
+## Screenshots
 
-The custom system was originally developed on Windows and later migrated to
-Ubuntu. Current project validation covers Ubuntu. Upstream Windows support does
-not establish a complete native Windows port of this application layer.
-See [Windows setup and WSL2](docs/WINDOWS.md) and the
-[LLM native Windows porting prompt](docs/WINDOWS_PORT_PROMPT.md).
+Captured from the local installation on November 2, 2026. These views show
+manual operation and retained registry data; the counters do not establish
+active autonomous workers or newly verified application outcomes. Crops omit
+private workspace paths; the job queue is filtered to remote roles.
+
+### OpenClaw · Personal Operations
+
+| System overview | Agent roles and queue status |
+| --- | --- |
+| ![Personal Operations: current queue and manual runtime status](docs/images/openclaw-operations.jpg) | ![Coordinator and mail roles with current task states](docs/images/openclaw-roles.jpg) |
+
+### Headhunter · Career Control
+
+| Job registry and workflow stages | Source coverage |
+| --- | --- |
+| ![Remote job queue with filters and preparation requirements](docs/images/headhunter-jobs.jpg) | ![Career registry counters and source collection records](docs/images/headhunter-sources.jpg) |
+
+<details>
+<summary>Agent identity and tool access</summary>
+
+| Agent identity | Saved tool policy |
+| --- | --- |
+| ![OpenClaw agent identity settings](docs/images/openclaw-agent-overview.jpg) | ![Minimal tool profile and saved access settings](docs/images/openclaw-tool-access.jpg) |
+
+The tool screen shows native saved settings; it does not demonstrate a complete
+MCP workflow or OS-level isolation.
+
+</details>
+
+## Main workflows
+
+- **Task coordination:** bounded contracts, one responsible role, evidence
+  references and explicit unknowns. OpenClaw handles providers and sessions;
+  the application layer handles workflow state and approvals.
+- **Career preparation:** Greenhouse, Lever and Ashby sources, requirements
+  review, confirmed candidate facts and versioned application packages.
+  External submission requires separate owner approval, with manual CAPTCHA handoff.
+- **Mail review:** read-only Outlook integration with approved date windows,
+  paginated header review and acknowledged coverage checkpoints.
+- **Security reporting:** passive Ubuntu/OpenClaw observations and reviews of
+  approved local website snapshots, without automatic remediation.
+- **Local visibility:** a read-only career dashboard and a Personal Operations
+  status page in the OpenClaw UI.
+
+## Controlled agent learning
+
+Owner feedback and task-result metadata feed versioned memory and improvement
+proposals. Each candidate records its sources and content hash. Memory checks
+preserve the owner's wording and scope; a fixed evaluator tests declarative
+career-policy proposals against a synthetic baseline and holdout cases.
+
+Passing checks makes a candidate ready for owner review. Approval is bound to
+the exact SHA-256 version; application and withdrawal are separate actions.
+Identical proposals reuse the existing candidate; rollback refuses to overwrite
+later edits. This loop does not train model weights or apply arbitrary code
+changes. Synthetic success does not establish better live results.
+
+## Security boundaries
+
+- Fixed MCP tool sets and runtime input validation enforce role-specific access
+  before dispatch. Audit events record role, tool and outcome without payloads.
+- The coordinator receives minimal metadata about other roles' tasks;
+  private task narratives remain with their assigned role.
+- Career approvals bind exact package digests, source/profile versions and
+  expiry. Durable uncertain attempts block automatic replay.
+- Mail review is read-only. Security agents analyze saved reports; report
+  freshness and collection failures remain visible.
+
+These are application controls, not OS-level isolation or a guarantee against
+prompt injection. External content is data and cannot grant new authority.
 
 ## Reproduce the local checks
 
@@ -29,15 +94,19 @@ node scripts/prepare-config.cjs "$PWD"
 npm run check
 ```
 
-The configuration command creates **disabled examples** and refuses to overwrite
-existing configuration. Run it once in a fresh clone. Tests use temporary SQLite
-databases and fictional candidates; they do not send messages or applications.
-The GitHub Actions workflow runs the same development checks.
+The configuration command creates **disabled examples** and refuses existing
+files; run it once in a fresh clone. Checks use synthetic data and temporary
+SQLite databases. Strict TypeScript checking currently covers four JavaScript
+modules. The CI workflow defines the same development checks.
 
 These commands install development tools only. OpenClaw, Outlook, model access,
-agent workspaces and browser setup are separate. See [setup](docs/SETUP.md).
+agent workspaces and browser setup are separate. See [setup](docs/SETUP.md)
+before attempting runtime installation.
 
 ## Source map
+
+OpenClaw owns the Gateway, providers and native sessions. The CommonJS application
+layer owns task contracts, workflow state, evidence and approval records.
 
 | Path | Purpose |
 |---|---|
@@ -52,6 +121,20 @@ agent workspaces and browser setup are separate. See [setup](docs/SETUP.md).
 | `integrations/outlook/` | Outlook MCP manifest and lockfile |
 | `SOURCE-MANIFEST.json` | File sizes and SHA-256 hashes for this source snapshot |
 
-Read [source layout](docs/STRUCTURE.md), [architecture](docs/ARCHITECTURE.md), [language conventions](docs/LOCALIZATION.md), [limitations](docs/LIMITATIONS.md),
-[privacy](docs/PRIVACY.md) and [third-party notices](THIRD_PARTY_NOTICES.md).
-No open-source license has been selected for the custom code.
+Read [architecture and roles](docs/ARCHITECTURE.md),
+[source layout](docs/STRUCTURE.md), [limitations](docs/LIMITATIONS.md) and
+[language conventions](docs/LOCALIZATION.md).
+
+The project began on Windows under the historical name `AI.exe -y` and migrated
+to Ubuntu. Current validation covers Ubuntu; see [Windows and WSL2](docs/WINDOWS.md)
+and [native porting guidance](docs/WINDOWS_PORT_PROMPT.md) for compatibility limits.
+
+## Privacy and license
+
+This edition excludes credentials, databases, conversations, candidate materials,
+job records, browser profiles, private workspaces, working permissions and the
+original Git history. A source snapshot does not replace a private-state backup.
+See [privacy](docs/PRIVACY.md) for the distribution boundary.
+
+No license has been selected for the custom code. Dependency provenance and
+upstream notices are retained in [third-party notices](THIRD_PARTY_NOTICES.md).

@@ -1,6 +1,6 @@
 {
   "edition": "distilled-source",
-  "prepared_at": "2026-11-02T10:18:55.697Z",
+  "prepared_at": "2026-11-02T11:32:56.379Z",
   "original_commit_identifiers_included": false,
   "working_tree_snapshot": true,
   "history_included": false,
@@ -237,6 +237,42 @@
       "path": "docs/ARCHITECTURE.md",
       "bytes": 1942,
       "sha256": "8e9effebbab56c554b7e394baed3679a927147d4c129be4cc134f7f44149a105",
+      "mode": "644"
+    },
+    {
+      "path": "docs/images/headhunter-jobs.jpg",
+      "bytes": 115832,
+      "sha256": "3bcdf6b8aeb95ae0907b553acbeae0afc1655b373a461cd30ff8ade23964f194",
+      "mode": "644"
+    },
+    {
+      "path": "docs/images/headhunter-sources.jpg",
+      "bytes": 96731,
+      "sha256": "03224524f794ceb790ff71fea650040c4fbeb5f66cb6886f14630ac7a15e8538",
+      "mode": "644"
+    },
+    {
+      "path": "docs/images/openclaw-agent-overview.jpg",
+      "bytes": 25998,
+      "sha256": "cfbcc7cb8704629e74f651eb7b76762b3fc81ea06b32ab3cae2cf6dc8fd83b49",
+      "mode": "644"
+    },
+    {
+      "path": "docs/images/openclaw-operations.jpg",
+      "bytes": 72066,
+      "sha256": "4677c5acba814f6555346d8dd97bc4db23f79baf83db6f8444bf8fd46b98c21f",
+      "mode": "644"
+    },
+    {
+      "path": "docs/images/openclaw-roles.jpg",
+      "bytes": 56682,
+      "sha256": "2f759e4786ad3df17442aa5145e643b87801694f9bf034354d3f8d13d5b9e9e2",
+      "mode": "644"
+    },
+    {
+      "path": "docs/images/openclaw-tool-access.jpg",
+      "bytes": 32932,
+      "sha256": "bdebe2382350d6bdf8e4529c37c6455eb594ec3470f158633093889cd9566696",
       "mode": "644"
     },
     {
@@ -853,8 +889,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 2837,
-      "sha256": "c942c7ad3e98a428638a02b43bcc46b149c0c2b18847b4be32d75e82ddf24dbe",
+      "bytes": 6794,
+      "sha256": "6ea81c09e35fdf61fbda92f05bd506f4b6b4ad0f5158cdb746fd880be39e5e25",
       "mode": "644"
     },
     {
